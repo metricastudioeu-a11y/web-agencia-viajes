@@ -1,0 +1,12 @@
+{
+  "name": "web-agencia-viajes",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "latest",
+    "@astrojs/cloudflare": "latest"
+  }
+}
