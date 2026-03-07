@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "astro": "latest",
-    "@astrojs/cloudflare": "latest"
+    "@astrojs/cloudflare": "latest",
+    "typescript": "latest"
   }
 }
