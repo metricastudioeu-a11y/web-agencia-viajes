@@ -1,9 +1,14 @@
 import { defineConfig } from 'astro/config';
-import cloudflare from "@astrojs/cloudflare";
+import cloudflare from '@astrojs/cloudflare';
 
 // Configuración maestra para conectar tu código con Cloudflare
 export default defineConfig({
-  output: 'server', // Esto permite que n8n actualice la web al instante
-  adapter: cloudflare(), // Le dice a Astro que su "casa" es Cloudflare
+  output: 'server', 
+  adapter: cloudflare(), 
   site: 'https://viajesselva.es',
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+    },
+  },
 });

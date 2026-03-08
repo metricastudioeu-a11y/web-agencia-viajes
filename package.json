@@ -1,11 +1,13 @@
 {
-  "name": "web-agencia-viajes",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": { "build": "astro build" },
-  "dependencies": {
-    "astro": "latest",
-    "@astrojs/cloudflare": "latest",
-    "typescript": "latest"
-  }
+"name": "web-agencia-viajes",
+"type": "module",
+"version": "0.0.1",
+"scripts": {
+"build": "astro build"
+},
+"dependencies": {
+"astro": "^5.0.0",
+"@astrojs/cloudflare": "^12.1.1",
+"typescript": "^5.7.3"
+}
 }
