@@ -1,8 +1,9 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro:loaders'; // IMPORTANTE: que use ":"
+import { glob } from 'astro/loaders'; // Cambiado de ":" a "/" para Cloudflare
 
 const viajes = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/viajes" }),
+  // Usamos la ruta desde la raíz del proyecto para que no haya dudas
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/viajes" }),
   schema: ({ image }) => z.object({
     titulo: z.string(),
     descripcion: z.string(),
